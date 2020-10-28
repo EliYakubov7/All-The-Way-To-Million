@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ScorePopUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">#87CEEB</item>
+    </style>
+
+</resources>

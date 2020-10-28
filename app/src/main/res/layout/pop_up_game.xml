@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/app_background_gradient"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/congratulations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/win"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <!--  <TextView
+              android:id="@+id/tvName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="אליהו! "
+              android:textColor="#000"
+              android:textSize="30sp"
+              android:textStyle="bold"
+              tools:ignore="MissingConstraints" /> -->
+
+          <TextView
+              android:id="@+id/tvCongratulations"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textColor="#000"
+              android:textSize="30sp"
+              android:textStyle="bold"
+              tools:ignore="MissingConstraints" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/win"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          app:layout_constraintBottom_toTopOf="@id/trophy"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/congratulations"
+          tools:ignore="MissingConstraints">
+
+          <TextView
+              android:id="@+id/tvMessage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:gravity="center"
+              android:text="  זכית ב "
+              android:textColor="#000"
+              android:textSize="26sp"
+              android:textStyle="bold"
+              app:layout_constraintBottom_toTopOf="@id/trophy"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tvCongratulations"
+              tools:ignore="MissingConstraints" />
+
+      </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOfMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/trophy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/win"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000000"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvShekelPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ₪"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ImageView
+          android:id="@+id/trophy"
+          android:layout_width="300dp"
+          android:layout_height="300dp"
+          android:layout_margin="5dp"
+          android:background="@drawable/trophy"
+          app:layout_constraintBottom_toTopOf="@id/buttons"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/win" />
+
+      <LinearLayout
+          android:id="@+id/buttons"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/trophy">
+
+          <Button
+              android:id="@+id/play_again"
+              android:layout_width="170dp"
+              android:layout_height="60dp"
+              android:layout_marginTop="20dp"
+              android:layout_margin="10dp"
+              android:background="@drawable/main_menu_buttons"
+              android:onClick="playAgain"
+              android:text="שחק שוב"
+              android:textColor="#000"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              tools:ignore="ButtonStyle" />
+
+          <Button
+              android:id="@+id/main_menu"
+              android:layout_width="170dp"
+              android:layout_height="60dp"
+              android:layout_marginTop="20dp"
+              android:layout_margin="10dp"
+              android:background="@drawable/main_menu_buttons"
+              android:onClick="quit"
+              android:text="תפריט"
+              android:textColor="#000"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+      </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

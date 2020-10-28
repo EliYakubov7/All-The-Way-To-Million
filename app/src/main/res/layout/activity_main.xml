@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_gradient"
+    android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/change_question"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/change_question"
+                            android:scaleType="fitCenter"
+                            android:background="@null"/>
+
+                        <ImageButton
+                            android:id="@+id/fifty_fifty"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/fifty_fifty"
+                            android:scaleType="fitCenter"
+                            android:background="@null"/>
+
+                        <ImageButton
+                            android:id="@+id/audience"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/audience"
+                            android:scaleType="fitCenter"
+                            android:background="@null"/>
+
+                        <com.view.circulartimerview.CircularTimerView
+                            android:id="@+id/timer"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="left"
+                            app:progressColor="#e76130"
+                            app:backgroundColor="#000000"
+                            app:progressBackgroundColor="#FFFFFF"
+                            app:backgroundWidth="7"
+                            app:isClockwise="true"
+                            app:textSize="18sp"
+                            app:maxValue="100"
+                            app:progressTextColor="#FFFFFF"
+                            tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/question"
+                    android:background="@drawable/background_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="3dp"
+                    android:text=""
+                    android:background="@drawable/background_answer"
+                    android:tag="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/choice2"
+                    android:background="@drawable/background_answer"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:tag="2" />
+
+                <Button
+                    android:id="@+id/choice3"
+                    android:background="@drawable/background_answer"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:layout_margin="3dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:tag="3" />
+
+                <Button
+                    android:id="@+id/choice4"
+                    android:background="@drawable/background_answer"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:layout_margin="3dp"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:tag="4" />
+
+                <LinearLayout
+                    android:layout_width="363dp"
+                    android:layout_height="250dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/question1"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="100 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question2"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="200 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question3"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="300 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question4"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="500 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question5"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/yours_money_after_correct_answer"
+                                    android:text="1,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/question6"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="2,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question7"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="4,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question8"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="8,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question9"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="16,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question10"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/yours_money_after_correct_answer"
+                                    android:text="32,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/leave"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/leave"
+                                    android:text="פרישה"
+                                    android:textColor="@android:color/white" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/question11"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="64,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question12"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="125,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question13"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="250,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question14"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/you_lost_all_after_wrong_answer"
+                                    android:text="500,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                                <Button
+                                    android:id="@+id/question15"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/yours_money_after_correct_answer"
+                                    android:text="1,000,000 ₪"
+                                    android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            <!--   <TextView
+                    android:id="@+id/number_of_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="שאלה מספר 1"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:typeface="sans">
+                </TextView> -->
+
+        </LinearLayout>
+
+</LinearLayout>
