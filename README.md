@@ -26,7 +26,7 @@ Trivia-Game App
   
 ### Lifelines
 
-<img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/audience.png" width="250"> <img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/fifty_fifty.png" width="247"> <img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/change_question.gif" width="245">
+<img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/audience.png" width="250"> <img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/fifty_fifty.png" width="247"> <img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/change_question.gif" width="225">
 
 ### Leave Game
 
