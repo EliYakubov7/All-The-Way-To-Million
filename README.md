@@ -18,7 +18,7 @@ Trivia-Game App
 
 ### Youtube
 [<img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/youtube.png" width="500">
-](https://youtu.be/6sz7Tpo0UcA "YouTube Video")
+](https://youtu.be/aXu97Gu7z-w "YouTube Video")
 
 ### Main Screen + Highscore
 
