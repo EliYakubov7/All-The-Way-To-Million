@@ -38,7 +38,7 @@ Trivia-Game App
 
 ### Correct Answer 
 
-<img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/correct_answer.jpg" width="250">
+<img src="https://github.com/EliYakubov7/All-The-Way-To-Million/blob/main/screenshots/correct_answer.jpg" width="255">
 
 ### Wrong Answer 
 
