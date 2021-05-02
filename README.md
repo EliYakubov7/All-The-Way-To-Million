@@ -4,6 +4,8 @@ Trivia-Game App
 ## About the project:
 
 - This is my third project in Android Studio 
+- The main purpose of the application is to enrich your knowledge
+- The project uses : Count Down Timer, Fragments, Firebase, Media Player, Rand Functions
 - The app supports one language : Hebrew
 
 ## About the game:
